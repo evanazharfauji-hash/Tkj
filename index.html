@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teknik Komputer dan Jaringan (TKJ)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Teknik Komputer dan Jaringan (TKJ)</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#materi">Materi</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Selamat Datang di Jurusan TKJ</h2>
+    <p>Mempelajari dunia jaringan komputer, server, dan teknologi informasi masa depan.</p>
+    <button onclick="scrollToSection('profil')">Pelajari Lebih Lanjut</button>
+  </section>
+
+  <section id="profil">
+    <h2>Profil Jurusan TKJ</h2>
+    <p>
+      TKJ (Teknik Komputer dan Jaringan) adalah jurusan yang mempelajari tentang
+      cara merakit komputer, menginstal sistem operasi, mengatur jaringan LAN, WAN,
+      dan internet, serta melakukan perawatan perangkat keras dan lunak komputer.
+    </p>
+  </section>
+
+  <section id="materi">
+    <h2>Mata Pelajaran di TKJ</h2>
+    <ul>
+      <li>Perakitan Komputer</li>
+      <li>Jaringan Dasar</li>
+      <li>Administrasi Server</li>
+      <li>Teknologi Layanan Jaringan</li>
+      <li>Keamanan Jaringan</li>
+      <li>Internet of Things (IoT)</li>
+    </ul>
+  </section>
+
+  <section id="galeri">
+    <h2>Galeri Kegiatan</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x250/?computer" alt="Praktik Komputer" />
+      <img src="https://source.unsplash.com/400x250/?network" alt="Jaringan" />
+      <img src="https://source.unsplash.com/400x250/?server" alt="Server" />
+      <img src="https://source.unsplash.com/400x250/?students" alt="Siswa TKJ" />
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak Kami</h2>
+    <form onsubmit="sendMessage(event)">
+      <input type="text" id="name" placeholder="Nama Anda" required />
+      <input type="email" id="email" placeholder="Email Anda" required />
+      <textarea id="message" placeholder="Pesan Anda" required></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+    <p id="feedback"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 TKJ School. Semua Hak Dilindungi.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
